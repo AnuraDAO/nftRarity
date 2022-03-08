@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL FROG RARITY GUIDE</title>
+</head>
+<body>
+    <link rel="stylesheet" hfer="style.css">
+    <h1> Check your NFT Rarity and Rank</h1>
+    <script src="main.js" defer ></script>
+    <style>
+        body {background-color: powderblue;}
+        h2 {color: black;}
+        img {
+            border: 5px solid #555;
+        }
+        
+    /* .flex-container {
+    display: flex;
+    flex-direction: column;
+    } */
+
+    /* .flex-container {
+    background-color: bisque;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    } */
+    
+    </style>
+    <div class="flex-container">
+        <h2 id = "details"> </h2>
+        <h2 id = "rank"></h2>
+        <div>
+            <img id="dynamicImg" src="https://ipfs.io/ipfs/QmdWcJzoZpeD8DtCUSAC5QLvjMrespWbTeKaphMt9PmBck/50.png" width="250px" height="275px">
+            <p id = "attributeList0"></p>
+            <p id = "attributeList1"></p>
+            <p id = "attributeList2"></p>
+            <p id = "attributeList3"></p>
+            <p id = "attributeList4"></p>
+            <p id = "attributeList5"></p>
+            <p id = "attributeList6"></p>
+            <p id = "attributeList7"></p>
+        </div>
+
+        <label for="newNFT">Check out another Digi Frog (1-400):</label>
+
+        <input type="number" id="nftSearch" name="nftSearch"
+            min="1" max="400">
+    
+        <button onclick="buttonClick(document.getElementById('nftSearch').value)">Search!</button>
+    </div>
+</body>
+</html>
